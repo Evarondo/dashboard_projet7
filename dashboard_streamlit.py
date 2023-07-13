@@ -44,11 +44,10 @@ def main(data_shap):
             # Formatage des informations en texte
             info_text = ""
             for key, value in client_info.items():
-                formatted_key = f"__{key}__"
-                info_text += f"{formatted_key}: {value}\n"
+                info_text += f"{key}: {value}\n"
             
             # Affichage des informations formatées
-            st.markdown(info_text)
+            st.write(info_text)
             
             # Récupération du score du client
             score = client_info.get("Score du client:")
