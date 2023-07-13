@@ -44,7 +44,7 @@ def main(data_shap):
             # Formatage des informations en texte
             info_text = ""
             for key, value in client_info.items():
-                info_text += f"{key}: {value}\n"
+                info_text += f"**{key}** {value}\n"
             
             # Affichage des informations formatées
             st.text(info_text)
