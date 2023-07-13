@@ -47,7 +47,8 @@ def main(data_shap):
                 info_text += f"**{key}** {value}\n"
             
             # Affichage des informations formatées
-            st.text(info_text)
+            for line in info_text.splitlines():
+            st.write(line)
             
             # Récupération du score du client
             score = client_info.get("Score du client:")
